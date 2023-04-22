@@ -18,6 +18,7 @@ public class EraseGrounder : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            objectPrefab.SetActive(true);
             // Lấy vị trí chuột khi được giữ
             spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             spawnPosition.z = 0;
